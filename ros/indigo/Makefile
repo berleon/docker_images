@@ -10,10 +10,10 @@ help:
 	@echo ""
 
 build_desktop:
-	@docker build --tag=ros_cudnn:indigo-ros-core          indigo-ros-core/.
-	@docker build --tag=ros_cudnn:indigo-ros-base          indigo-ros-base/.
-	@docker build --tag=ros_cudnn:indigo-desktop      indigo-desktop/.
-	@docker build --tag=ros_cudnn:indigo-desktop-full indigo-desktop-full/.
+	@docker build --tag=ros:indigo-ros-core          indigo-ros-core/.
+	@docker build --tag=ros:indigo-ros-base          indigo-ros-base/.
+	@docker build --tag=ros:indigo-desktop      indigo-desktop/.
+	@docker build --tag=ros:indigo-desktop-full indigo-desktop-full/.
 
 build:
 	@docker build --tag=ros:indigo-ros-core          indigo-ros-core/.
